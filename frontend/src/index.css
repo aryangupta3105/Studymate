@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body-md h-screen flex overflow-hidden;
+    background-color: #F0F0F0;
+  }
+}
+
+/* Material symbols outlined config */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1;
+}
+
+/* Custom Neubrutalist Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+  border-left: 3px solid #1a1c1c;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1c1c;
+  border: 1px solid #f9f9f9;
+}
+
+/* Citation Custom Badge animations and layout styles */
+.citation-chip {
+  @apply inline-flex items-center gap-1 border-[2px] border-on-surface px-2 py-1 bg-secondary-container text-on-surface shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] cursor-pointer hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+}
+
+.citation-chip:active {
+  @apply translate-x-[2px] translate-y-[2px] shadow-none;
+}

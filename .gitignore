@@ -1,0 +1,28 @@
+# API Credentials
+.env
+
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+
+# Python caching & build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local temporary DB & tracker files
+backend/mock_database.json
+backend/uploaded_files.json
+backend/uploaded_files.json
+
+# Node dependencies and build folders
+frontend/node_modules/
+frontend/dist/
+node_modules/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
