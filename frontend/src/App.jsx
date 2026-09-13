@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = '/api';
 
 function App() {
   const [files, setFiles] = useState([]);
